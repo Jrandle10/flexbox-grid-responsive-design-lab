@@ -25,26 +25,57 @@ body {
   margin: 0;
   display: grid;
   min-height: 100vh;
-  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-columns: 25% 100% 40% 100%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+  "top-left top-right"
+  "bottom-left bottom-right";
 }
-
 main {
+  margin: 0;
   display: flex;
-  grid-column: 2;
-  flex-direction: column;
+  grid-area: top-right;
 }
 
 img {
-  border-radius: 50%;
+  grid-area: top-left;
+   
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+#brand {
+  grid-area: bottom-right;
 }
 
 
 
 
-  
 
-  
 
-  
 
-  
+
+
+
+/* main {
+  display: flex;
+  flex-direction: column;
+  grid-area: top-right
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
